@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Patua+One&display=swap");
+
+.header-color {
+  background: #bbd2c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #536976,
+    #bbd2c5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #536976,
+    #bbd2c5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.landing-grid {
+  background: #bbd2c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #536976,
+    #bbd2c5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #536976,
+    #bbd2c5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  top: 5%;
+  width: 100%;
+}
+.contact-body {
+  margin: auto;
+  background: grey;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  background: white;
+  color: black;
+  border: 2px solid #bbd2c5;
+  margin-bottom: 20px;
+  background: #bbd2c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #536976,
+    #bbd2c5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #536976,
+    #bbd2c5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.contact-grid h4 {
+  font-family: "Patua One", sans-serif;
+}
+.contact-grid h3 {
+  font-family: "Patua One", sans-serif;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+.avatar-img {
+  height: 250px;
+  padding-top: 5rem;
+}
+.banner-text {
+  background-color: black;
+  opacity: 0.8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+.post {
+  align-content: center;
+}
+
+.banner-text h1 {
+  font-size: 10vh;
+  font-weight: bold;
+  color: white;
+}
+
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+.banner-text p {
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 8px;
+}
+.products-grid {
+  display: flex;
+  height: auto;
+}
+.category-tabs {
+  background: #bbd2c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #536976,
+    #bbd2c5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #536976,
+    #bbd2c5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.haks {
+  height: 60vh;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.social i {
+  color: black;
+  font-size: 5vh;
+  padding: 6px;
+}
+.errorMsg {
+  color: #cc0000;
+  margin-bottom: 12px;
+}
+.sucessMsg {
+  color: #6b8e23;
+  margin-bottom: 10px;
+}
+.shadow {
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #ccc; /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+.grid-item {
+  height: 160px;
+  width: 160px;
+}
+
+.grid-item--width2 {
+  height: 5vh;
+  width: 5vh;
+}
+.grid-item--height2 {
+  height: 5vh;
+  width: 5vh;
+}
+
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+  .haks {
+    height: 40vh;
+  }
+  .social-links i {
+    font-size: 2em;
+  }
+  .banner-text h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+  }
+  .landing-grid {
+    top: 5%;
+  }
+}
+@media (max-width: 576px) {
+  .banner-text h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+  }
+  .banner-text p {
+    color: white;
+    font-size: 15px;
+    padding: 1em;
+  }
+  .social-links {
+    justify-content: space-between;
+  }
+  .social-links i {
+    color: white;
+    font-size: 19px;
+    padding-left: 1px;
+  }
+  .avatar-img {
+    height: 150px;
+    padding-top: 3rem;
+  }
+  .sticky-top {
+    display: none;
+  }
+  .haks {
+    height: 20vh;
+  }
+  .contact-grid h3 {
+    font-family: "Patua One", sans-serif;
+    font-size: 2rem;
+  }
+  .landing-grid {
+    top: 3%;
+  }
+}
