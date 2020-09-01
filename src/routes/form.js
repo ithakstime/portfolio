@@ -1,12 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
-const Form = require("../src/models/forms");
+const Form = require("../models/forms");
 
 //REQUEST GET FOR ALL ARTICLES
 router.get("/", (req, res) => {
   Form.find()
-    .then((form) => res.json(form))
+    .then((forms) => res.json(forms))
     .catch((err) => res.status(400).json(`Error: $(err)`));
 });
 
