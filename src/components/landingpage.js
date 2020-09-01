@@ -29,7 +29,11 @@ class LandingPage extends Component {
               <p>Commodities | Consulting | Sales | Marketing | Agency</p>
               <div className="social-links">
                 {/*Google page */}
-                <a href="http://g.page/haksinterlance" target="_blank">
+                <a
+                  href="http://g.page/haksinterlance"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fa fa-google" aria-hidden="true" />
                 </a>
                 {/*FB page */}
@@ -80,6 +84,7 @@ class LandingPage extends Component {
                     src="/img/agro.webp"
                     class="img-responsive"
                     width="100%"
+                    alt="haks"
                   />
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-4">
@@ -88,6 +93,7 @@ class LandingPage extends Component {
                     src="/img/metals.webp"
                     class="img-responsive"
                     width="100%"
+                    alt="haks"
                   />
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-4">
@@ -96,6 +102,7 @@ class LandingPage extends Component {
                     src="/img/fuel.webp"
                     class="img-responsive"
                     width="100%"
+                    alt="haks"
                   />
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-4">
@@ -104,6 +111,7 @@ class LandingPage extends Component {
                     src="/img/digi.webp"
                     class="img-responsive"
                     width="100%"
+                    alt="haks"
                   />
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-4">
@@ -112,6 +120,7 @@ class LandingPage extends Component {
                     src="/img/trade.webp"
                     class="img-responsive"
                     width="100%"
+                    alt="haks"
                   />
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-4">
@@ -120,6 +129,7 @@ class LandingPage extends Component {
                     src="/img/automotive.webp"
                     class="img-responsive"
                     width="100%"
+                    alt="haks"
                   />
                 </div>
               </div>

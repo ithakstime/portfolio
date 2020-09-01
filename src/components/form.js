@@ -101,7 +101,7 @@ class Forms extends React.Component {
                   </label>
                   <input
                     type="text"
-                    name="name"
+                    name="name" //this.newForm.name
                     id="defaultFormRegisterNameEx"
                     value={this.state.fields.username}
                     onChange={this.handleChange}
