@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const Form = require("./src/models/forms");
+const Form = require("../src/models/forms");
 
 //REQUEST GET FOR ALL ARTICLES
 router.get("/", (req, res) => {
