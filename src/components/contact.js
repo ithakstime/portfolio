@@ -18,7 +18,7 @@ class Contact extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fa fa-google" aria-hidden="true" />
+                <i className="fa fa-google" aria-hidden="true" />
               </a>
               {/*FB page */}
 
@@ -27,7 +27,7 @@ class Contact extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fa fa-facebook-square" aria-hidden="true" />
+                <i className="fa fa-facebook-square" aria-hidden="true" />
               </a>
               {/*Twitter page */}
 
@@ -36,7 +36,7 @@ class Contact extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fa fa-twitter-square" aria-hidden="true" />
+                <i className="fa fa-twitter-square" aria-hidden="true" />
               </a>
               {/*LinkedIn page */}
 
@@ -45,7 +45,7 @@ class Contact extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fa fa-linkedin-square" aria-hidden="true" />
+                <i className="fa fa-linkedin-square" aria-hidden="true" />
               </a>
               {/*Instagram page */}
 
@@ -54,7 +54,7 @@ class Contact extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fa fa-instagram" aria-hidden="true" />
+                <i className="fa fa-instagram" aria-hidden="true" />
               </a>
             </div>
           </Cell>

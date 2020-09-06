@@ -3,22 +3,22 @@ const router = express.Router();
 
 const Form = require("../models/forms");
 
-//REQUEST GET FOR ALL ARTICLES
+//REQUEST GET FOR ALL FORM
 router.get("/", (req, res) => {
   Form.find()
-    .then((forms) => res.json(forms))
-    .catch((err) => res.status(400).json(`Error: $(err)`));
+    .then((form) => res.json(form))
+    .catch((err) => res.status(400).json(`Error: ${err}`));
 });
 
 //REQUEST TO ADD NEW FORM
 router.post("/add", (req, res) => {
   const newForm = new Form({
-    name: { type: String, required: true },
-    emailid: { type: String, required: true },
-    country: { type: String, required: true },
-    mobileno: { type: String, required: true },
-    company: { type: String, required: true },
-    inquiry: { type: String, required: true },
+    name: req.body.name,
+    emailid: req.body.emailid,
+    country: req.body.country,
+    mobileno: req.body.mobileno,
+    company: req.body.company,
+    inquiry: req.body.inquiry,
   });
   newForm
     .save()

@@ -10,7 +10,7 @@ class LandingPage extends Component {
         <Grid className="landing-grid">
           <Cell col={12}>
             <div
-              class="landing-grid"
+              className="landing-grid"
               style={{
                 display: "flex",
                 justifyContent: "center",
@@ -34,7 +34,7 @@ class LandingPage extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa fa-google" aria-hidden="true" />
+                  <i className="fa fa-google" aria-hidden="true" />
                 </a>
                 {/*FB page */}
 
@@ -43,7 +43,7 @@ class LandingPage extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa fa-facebook-square" aria-hidden="true" />
+                  <i className="fa fa-facebook-square" aria-hidden="true" />
                 </a>
                 {/*Twitter page */}
 
@@ -52,7 +52,7 @@ class LandingPage extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa fa-twitter-square" aria-hidden="true" />
+                  <i className="fa fa-twitter-square" aria-hidden="true" />
                 </a>
                 {/*LinkedIn page */}
 
@@ -61,7 +61,7 @@ class LandingPage extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa fa-linkedin-square" aria-hidden="true" />
+                  <i className="fa fa-linkedin-square" aria-hidden="true" />
                 </a>
                 {/*Instagram page */}
 
@@ -70,7 +70,7 @@ class LandingPage extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa fa-instagram" aria-hidden="true" />
+                  <i className="fa fa-instagram" aria-hidden="true" />
                 </a>
               </div>
             </div>
@@ -82,7 +82,7 @@ class LandingPage extends Component {
                   <h3>Agro</h3>
                   <img
                     src="/img/agro.webp"
-                    class="img-responsive"
+                    className="img-responsive"
                     width="100%"
                     alt="haks"
                   />
@@ -91,7 +91,7 @@ class LandingPage extends Component {
                   <h3>Metals</h3>
                   <img
                     src="/img/metals.webp"
-                    class="img-responsive"
+                    className="img-responsive"
                     width="100%"
                     alt="haks"
                   />
@@ -100,7 +100,7 @@ class LandingPage extends Component {
                   <h3>Fuel</h3>
                   <img
                     src="/img/fuel.webp"
-                    class="img-responsive"
+                    className="img-responsive"
                     width="100%"
                     alt="haks"
                   />
@@ -109,7 +109,7 @@ class LandingPage extends Component {
                   <h3>Digital Marketing IT</h3>
                   <img
                     src="/img/digi.webp"
-                    class="img-responsive"
+                    className="img-responsive"
                     width="100%"
                     alt="haks"
                   />
@@ -118,7 +118,7 @@ class LandingPage extends Component {
                   <h3>International Trade</h3>
                   <img
                     src="/img/trade.webp"
-                    class="img-responsive"
+                    className="img-responsive"
                     width="100%"
                     alt="haks"
                   />
@@ -127,7 +127,7 @@ class LandingPage extends Component {
                   <h3>Automotive</h3>
                   <img
                     src="/img/automotive.webp"
-                    class="img-responsive"
+                    className="img-responsive"
                     width="100%"
                     alt="haks"
                   />

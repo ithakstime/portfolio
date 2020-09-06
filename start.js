@@ -5,7 +5,7 @@ const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -23,5 +23,6 @@ connect.once("open", () =>
 connect.on("error", console.error.bind(console, "MongoDB connection error:"));
 
 const formRoutes = require("./src/routes/form");
+app.use("/newForm", formRoutes);
+
 app.listen(port, () => console.log(`The app is running in port: ${port}`));
-app.use("/contact", formRoutes);

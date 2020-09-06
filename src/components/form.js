@@ -1,6 +1,7 @@
 import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn } from "mdbreact";
-const Form = require("../routes/form");
+import router from "../routes/form";
+const Form = require("../models/forms");
 
 class Forms extends React.Component {
   constructor(props) {
@@ -16,14 +17,17 @@ class Forms extends React.Component {
   handleChange(e) {
     let fields = this.state.fields;
     fields[e.target.name] = e.target.value;
+
     this.setState({
       fields,
     });
   }
+
   submituserInquiryForm(e) {
     console.log(this.validateForm());
     e.preventDefault();
   }
+
   validateForm() {
     let fields = this.state.fields;
     let errors = {};
@@ -75,13 +79,16 @@ class Forms extends React.Component {
       formIsValid = false;
       errors["inquiry"] = "*Please enter your inquiry.";
     }
+
     this.setState({
       errors: errors,
     });
+
     return formIsValid;
   }
 
   render() {
+    console.log("State:", this.state.fields);
     return (
       <div id="main-inquiry-container">
         <div id="inquire">
@@ -101,9 +108,9 @@ class Forms extends React.Component {
                   </label>
                   <input
                     type="text"
-                    name="name" //this.newForm.name
+                    name="name"
                     id="defaultFormRegisterNameEx"
-                    value={this.state.fields.username}
+                    value={this.state.fields.name}
                     onChange={this.handleChange}
                     className="form-control"
                   />
@@ -174,9 +181,11 @@ class Forms extends React.Component {
                   >
                     Inquiry
                   </label>
-                  <input
+                  <textarea
                     type="text"
                     name="inquiry"
+                    cols="20"
+                    rows="10"
                     id="defaultFormRegisterInquiryEx"
                     value={this.state.fields.inquiry}
                     onChange={this.handleChange}

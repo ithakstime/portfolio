@@ -10,5 +10,5 @@ const formSchema = new Schema({
   inquiry: { type: String, required: true },
 });
 
-const Hakstime = mongoose.model("forms", formSchema);
+const Hakstime = mongoose.model("form", formSchema);
 module.exports = Hakstime;

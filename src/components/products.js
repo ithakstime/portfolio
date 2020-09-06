@@ -13,9 +13,9 @@ class Product extends Component {
     if (this.state.activeTab === 0) {
       return (
         <div className="products-grid">
-          <div class="container">
-            <div class="row ">
-              <div class="col-xs-12 col-sm-6 col-md-4 pt-4">
+          <div className="container">
+            <div className="row ">
+              <div className="col-xs-12 col-sm-6 col-md-4 pt-4">
                 {/* Agro products*/}
                 <Card shadow={5}>
                   <Card.Img
@@ -50,7 +50,7 @@ class Product extends Component {
                   </Card.Body>
                 </Card>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-4 pt-4">
+              <div className="col-xs-12 col-sm-6 col-md-4 pt-4">
                 <Card>
                   <Card.Img
                     variant="top"
@@ -74,9 +74,9 @@ class Product extends Component {
     } else if (this.state.activeTab === 1) {
       return (
         <div className="products-grid">
-          <div class="container">
-            <div class="row ">
-              <div class="col-xs-12 col-sm-6 col-md-4 pt-4 ">
+          <div className="container">
+            <div className="row ">
+              <div className="col-xs-12 col-sm-6 col-md-4 pt-4 ">
                 {/*Metal products */}
                 <Card>
                   <Card.Img
@@ -111,7 +111,7 @@ class Product extends Component {
                   </Card.Body>
                 </Card>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-4 pt-4">
+              <div className="col-xs-12 col-sm-6 col-md-4 pt-4">
                 <Card>
                   <Card.Img
                     variant="top"
@@ -135,9 +135,9 @@ class Product extends Component {
     } else if (this.state.activeTab === 2) {
       return (
         <div className="products-grid">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-3 pt-4">
+          <div className="container">
+            <div className="row">
+              <div className="col-xs-12 col-sm-6 col-md-3 pt-4">
                 {/*Spare parts */}
                 <Card>
                   <Card.Img
@@ -155,7 +155,7 @@ class Product extends Component {
                   </Card.Body>
                 </Card>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 pt-4">
+              <div className="col-xs-12 col-sm-6 col-md-3 pt-4">
                 {/* */}
                 <Card>
                   <Card.Img
@@ -173,7 +173,7 @@ class Product extends Component {
                   </Card.Body>
                 </Card>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 pt-4">
+              <div className="col-xs-12 col-sm-6 col-md-3 pt-4">
                 {/* */}
                 <Card>
                   <Card.Img
@@ -191,7 +191,7 @@ class Product extends Component {
                   </Card.Body>
                 </Card>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 pt-4">
+              <div className="col-xs-12 col-sm-6 col-md-3 pt-4">
                 {/* */}
                 <Card>
                   <Card.Img

@@ -15,7 +15,7 @@ class Post extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa fa-2x fa-google" aria-hidden="true" />
+                  <i className="fa fa-2x fa-google" aria-hidden="true" />
                 </a>
                 <br />
                 <a
@@ -23,7 +23,10 @@ class Post extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa fa-2x fa-facebook-square" aria-hidden="true" />
+                  <i
+                    className="fa fa-2x fa-facebook-square"
+                    aria-hidden="true"
+                  />
                 </a>
                 <br />
                 <a
@@ -31,7 +34,10 @@ class Post extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa fa-2x fa-twitter-square" aria-hidden="true" />
+                  <i
+                    className="fa fa-2x fa-twitter-square"
+                    aria-hidden="true"
+                  />
                 </a>
                 <br />
                 <a
@@ -39,7 +45,10 @@ class Post extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa fa-2x fa-linkedin-square " aria-hidden="true" />
+                  <i
+                    className="fa fa-2x fa-linkedin-square "
+                    aria-hidden="true"
+                  />
                 </a>
                 <br />
                 <a
@@ -47,7 +56,7 @@ class Post extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa fa-2x fa-telegram" aria-hidden="true" />
+                  <i className="fa fa-2x fa-telegram" aria-hidden="true" />
                 </a>
                 <br />
                 <a
@@ -55,7 +64,7 @@ class Post extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa fa-2x fa-instagram " aria-hidden="true" />
+                  <i className="fa fa-2x fa-instagram " aria-hidden="true" />
                 </a>
                 <br />
               </div>
