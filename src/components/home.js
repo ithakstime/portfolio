@@ -81,7 +81,7 @@ class LandingPage extends Component {
                 <div className="col-xs-12 col-sm-6 col-md-4">
                   <h3>Agro</h3>
                   <img
-                    src="/img/agro.webp"
+                    src="./img/agro.webp"
                     className="img-responsive"
                     width="100%"
                     alt="haks"

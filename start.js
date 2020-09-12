@@ -1,28 +1,61 @@
 const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-
-require("dotenv").config();
-
 const app = express();
+const cors = require("cors");
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+
+const URI =
+  "mongodb+srv://ithaksinterlance:hakshaencryptcipher@cluster0.x3gjs.mongodb.net/test?retryWrites=true&w=majority";
 const port = process.env.PORT || 3000;
-
-app.use(cors());
 app.use(express.json());
+app.use(cors());
+const connectDB = async () => {
+  await mongoose.connect(URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+  console.log("MongoDB connected successfully");
+};
 
-const uri = process.env.ATLAS_URI;
-mongoose.connect(uri, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.post("/hakstime", function(req, res) {
+  var name = req.body.name;
+  var emailid = req.body.emailid;
+  var country = req.body.country;
+  var mobileno = req.body.mobileno;
+  var company = req.body.company;
+  var inquiry = req.body.inquiry;
+
+  var FormSchema = mongoose.Schema({
+    name: String,
+    emailid: String,
+    country: String,
+    mobileno: Number,
+    company: String,
+    inquiry: String,
+  });
+
+  var Form = mongoose.model("formData", FormSchema, "forms");
+
+  var form1 = new Form({
+    name: name,
+    emailid: emailid,
+    country: country,
+    mobileno: mobileno,
+    company: company,
+    inquiry: inquiry,
+  });
+
+  form1.save(function(err, data) {
+    if (err) {
+      res.send({ status: 0, result: data });
+    } else {
+      res.send({ status: 1, result: data });
+    }
+  });
 });
-const connect = mongoose.connection;
-connect.once("open", () =>
-  console.log("MongoDB connection established successfully!")
-);
-
-connect.on("error", console.error.bind(console, "MongoDB connection error:"));
-
-const formRoutes = require("./src/routes/form");
-app.use("/newForm", formRoutes);
 
 app.listen(port, () => console.log(`The app is running in port: ${port}`));
+connectDB();
