@@ -21,7 +21,11 @@ class Post extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-2x fa-google" aria-hidden="true" />
+                  <i
+                    className="fa fa-2x fa-google"
+                    style={{ color: "#de5246" }}
+                    aria-hidden="true"
+                  />
                 </a>
                 <br />
                 <a
@@ -31,6 +35,7 @@ class Post extends Component {
                 >
                   <i
                     className="fa fa-2x fa-facebook-square"
+                    style={{ color: "#4867AA" }}
                     aria-hidden="true"
                   />
                 </a>
@@ -42,6 +47,7 @@ class Post extends Component {
                 >
                   <i
                     className="fa fa-2x fa-twitter-square"
+                    style={{ color: "#1DA1F2" }}
                     aria-hidden="true"
                   />
                 </a>
@@ -53,6 +59,7 @@ class Post extends Component {
                 >
                   <i
                     className="fa fa-2x fa-linkedin-square "
+                    style={{ color: "#1976D2" }}
                     aria-hidden="true"
                   />
                 </a>
@@ -62,7 +69,11 @@ class Post extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-2x fa-telegram" aria-hidden="true" />
+                  <i
+                    className="fa fa-2x fa-telegram"
+                    style={{ color: "#813db4" }}
+                    aria-hidden="true"
+                  />
                 </a>
                 <br />
                 <a
@@ -70,7 +81,11 @@ class Post extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-2x fa-instagram " aria-hidden="true" />
+                  <i
+                    className="fa fa-2x fa-instagram "
+                    style={{ color: "#de5246" }}
+                    aria-hidden="true"
+                  />
                 </a>
                 <br />
               </div>

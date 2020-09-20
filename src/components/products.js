@@ -18,6 +18,7 @@ class Product extends Component {
             </div>
           </div>
         </div>
+        <hr class="my-0" />
         <div className="container">
           <div className="row welcome text-center">
             <div className="col-md-12">
@@ -84,12 +85,12 @@ class Product extends Component {
               <div className="card shadow-lg">
                 <img
                   className="card-img-top img-responsive"
-                  src="/img/rice.jpg"
+                  src="/img/aluminium.jpg"
                   height="175vh"
                   alt="products of haksinternationallancing"
                 />
                 <div className="card-body">
-                  <h4 className="card-title">Rice</h4>
+                  <h4 className="card-title">Aluminium Ingots</h4>
                   <p className="card-text" />
                 </div>
               </div>
@@ -98,12 +99,12 @@ class Product extends Component {
               <div className="card">
                 <img
                   className="card-img-top img-responsive"
-                  src="/img/grains.jpg"
+                  src="/img/constructionsteel.jpg"
                   height="175vh"
                   alt="products of haksinternationallancing"
                 />
                 <div className="card-body">
-                  <h4 className="card-title">Grains</h4>
+                  <h4 className="card-title">Construction steel</h4>
                   <p className="card-text" />
                 </div>
               </div>
@@ -112,12 +113,12 @@ class Product extends Component {
               <div className="card">
                 <img
                   className="card-img-top img-responsive"
-                  src="/img/sugar.jpg"
+                  src="/img/gold.jpg"
                   height="175vh"
                   alt="products of haksinternationallancing"
                 />
                 <div className="card-body">
-                  <h4 className="card-title">Sugar</h4>
+                  <h4 className="card-title">Gold</h4>
                   <p className="card-text" />
                 </div>
               </div>
@@ -137,12 +138,12 @@ class Product extends Component {
               <div className="card shadow-lg">
                 <img
                   className="card-img-top img-responsive"
-                  src="/img/rice.jpg"
+                  src="/img/kiamotor.png"
                   height="175vh"
                   alt="products of haksinternationallancing"
                 />
                 <div className="card-body">
-                  <h4 className="card-title">Rice</h4>
+                  <h4 className="card-title">Kia</h4>
                   <p className="card-text" />
                 </div>
               </div>
@@ -151,12 +152,12 @@ class Product extends Component {
               <div className="card">
                 <img
                   className="card-img-top img-responsive"
-                  src="/img/grains.jpg"
+                  src="/img/ford.png"
                   height="175vh"
                   alt="products of haksinternationallancing"
                 />
                 <div className="card-body">
-                  <h4 className="card-title">Grains</h4>
+                  <h4 className="card-title">Ford</h4>
                   <p className="card-text" />
                 </div>
               </div>
@@ -165,13 +166,30 @@ class Product extends Component {
               <div className="card">
                 <img
                   className="card-img-top img-responsive"
-                  src="/img/sugar.jpg"
+                  src="/img/hyundai.png"
                   height="175vh"
                   alt="products of haksinternationallancing"
                 />
                 <div className="card-body">
-                  <h4 className="card-title">Sugar</h4>
+                  <h4 className="card-title">Hyundai</h4>
                   <p className="card-text" />
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div className="row padding justify-content-center">
+                <div className="col-xs-12 col-sm-6 col-md-4">
+                  <div className="card">
+                    <img
+                      className="card-img-top"
+                      src="/img/honda.png"
+                      height="175vh"
+                    />
+                    <div className="card-body">
+                      <h4 className="card-title">Honda</h4>
+                      <p className="card-text" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
