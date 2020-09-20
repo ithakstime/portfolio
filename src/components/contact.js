@@ -169,7 +169,7 @@ class Contact extends Component {
     return formIsValid;
   }
   render() {
-    return (
+    return ( 
       <div className="contact-body">
         <div class="container-fluid">
           <img
