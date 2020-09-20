@@ -36,7 +36,8 @@
     "react-scripts": "3.4.3",
     "react-twitter-embed": "^3.0.3",
     "sweetalert2": "^10.0.2",
-    "webpack": "^4.44.1"
+    "webpack": "^4.44.1",
+    "whatsapp-web.js": "^1.8.2"
   },
   "scripts": {
     "start": "react-scripts start",

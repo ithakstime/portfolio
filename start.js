@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+const sendMail = require("./src/components/mail");
 
 const URI =
   "mongodb+srv://ithaksinterlance:hakshaencryptcipher@cluster0.x3gjs.mongodb.net/test?retryWrites=true&w=majority";
@@ -53,6 +54,19 @@ app.post("/hakstime", function(req, res) {
       res.send({ status: 0, result: data });
     } else {
       res.send({ status: 1, result: data });
+    }
+  });
+
+  //name, emailid, country, mobileno, company, inquiry
+
+  sendMail(name, emailid, country, mobileno, company, inquiry, function(
+    err,
+    data
+  ) {
+    if (err) {
+      res.status(500).json({ message: "Internal Error" });
+    } else {
+      Swal.fire("Email sent sucessfully!");
     }
   });
 });

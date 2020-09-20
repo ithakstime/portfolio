@@ -1,26 +1,43 @@
+require("dotenv").config();
 const nodemailer = require("nodemailer");
-const mailGun = require("nodemailer-mailgun-transport");
-
-const auth = {
+let transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com",
   auth: {
-    api_key: "b1ea06320ea00ae9c931935cb125e909-0f472795-9d5ecd8c",
-    domain: "sandbox9f448998d4da4e8f8776fed570114c96.mailgun.org",
+    type: "OAuth2",
+    user: "it.haksinterlance@gmail.com",
+    clientId:
+      "334096044223-nb2lk25sbfm27b5phhf3mv89fjmu2lap.apps.googleusercontent.com",
+    clientSecret: "2sABWYCsttvRkwtcI2BMC46G",
+    refreshToken:
+      "1//04NS8_It5VYMhCgYIARAAGAQSNwF-L9IrCuYO1qVWmzLNk0cGafm5ykpazObOmB2GV4Hnyy5MwGfNuZwmMPbLXFCq1tVc3ZsKqZY",
   },
-};
-
-const transporter = nodemailer.createTransport(mailGun(auth));
-
-const mailOptions = {
-  from: "it.haksinterlance@gmail.com",
-  to: "jsafroze@gmail.com",
-  subject: "Testing",
-  text: "Test",
-};
-
-transporter.sendMail(mailOptions, function(err, data) {
-  if (err) {
-    console.log("error occured");
-  } else {
-    console.log("Mail sent!");
-  }
 });
+
+const sendMail = (name, emailid, country, mobileno, company, inquiry, cb) => {
+  let mailOptions = {
+    from: emailid,
+    to: "jsafroze@gmail.com",
+    subject: name,
+    text:
+      "Country = \n" +
+      country +
+      "Mobileno= \n" +
+      mobileno +
+      "Company= \n" +
+      company +
+      "Email= \n" +
+      emailid +
+      "&Inquiry= \n" +
+      inquiry,
+  };
+
+  transporter.sendMail(mailOptions, function(err, data) {
+    if (err) {
+      cb(err, null);
+    } else {
+      cb(null, data);
+    }
+  });
+};
+
+module.exports = sendMail;
