@@ -169,9 +169,9 @@ class Contact extends Component {
     return formIsValid;
   }
   render() {
-    return ( 
-      <div className="contact-body">
-        <div class="container-fluid">
+    return (
+      <div>
+        <div class="container-fluid px-0">
           <img
             className="header-img img-fluid"
             src="/img/phone.jpg"
@@ -185,6 +185,7 @@ class Contact extends Component {
             </div>
           </div>
         </div>
+        <hr class="my-0" />
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -325,10 +326,10 @@ class Contact extends Component {
               <h4>HAKS INTERNATIONAL LANCING</h4>
               <img
                 src="img/haks.jpg"
-                class="img-responsive"
+                class="img-fluid"
                 alt="Haks international lancing"
               />
-              <div className="col-md-6 wrap">
+              <div className="col-md-6 wrapper">
                 <a
                   href="http://g.page/haksinterlance"
                   target="_blank"

@@ -4,7 +4,7 @@ class LandingPage extends Component {
   render() {
     return (
       <div>
-        <div class="container-fluid">
+        <div class="container-fluid px-0">
           <img
             className="header-img img-responsive img-fluid"
             src="/img/home_milky-way.jpg"
