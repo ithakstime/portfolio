@@ -1,4 +1,5 @@
 {
+  "homepage": "http://ithakstime.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "main": "start.js",
@@ -41,6 +42,8 @@
     "whatsapp-web.js": "^1.8.2"
   },
   "scripts": {
+    "pre-deploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

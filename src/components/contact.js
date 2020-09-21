@@ -82,11 +82,11 @@ class Contact extends Component {
 
     axios
       .post("/hakstime", formData)
-      .then(function() {
+      .then(function () {
         Swal.fire("Inquiry sent successfully!");
         window.location.reload();
       })
-      .catch(function(error) {
+      .catch(function (error) {
         Swal.fire("Invalid form! Check your form");
         this.submituserInquiryForm();
       });

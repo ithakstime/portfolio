@@ -184,6 +184,7 @@ class Product extends Component {
                       className="card-img-top"
                       src="/img/honda.png"
                       height="175vh"
+                      alt="honda"
                     />
                     <div className="card-body">
                       <h4 className="card-title">Honda</h4>
