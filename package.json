@@ -43,9 +43,9 @@
     "whatsapp-web.js": "^1.8.2"
   },
   "scripts": {
+    "start": "react-scripts start",
     "pre-deploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
