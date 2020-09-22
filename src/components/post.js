@@ -8,7 +8,7 @@ class Post extends Component {
         <div class="container-fluid px-0">
           <img
             className="header-img img-responsive img-fluid"
-            src="/img/update.jpg"
+            src={process.env.PUBLIC_URL + "/img/update.jpg"}
             alt="products of haksinternationallancing"
           />
         </div>

@@ -4,9 +4,9 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const sendMail = require("./src/components/mail");
+require("dotenv").config();
 
-const URI =
-  "mongodb+srv://ithaksinterlance:hakshaencryptcipher@cluster0.x3gjs.mongodb.net/test?retryWrites=true&w=majority";
+const URI = process.env.ATLAS_URI;
 const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors());

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 class LandingPage extends Component {
   render() {
     return (
@@ -7,7 +6,7 @@ class LandingPage extends Component {
         <div class="container-fluid px-0">
           <img
             className="header-img img-responsive img-fluid"
-            src="/img/home_milky-way.jpg"
+            src={process.env.PUBLIC_URL + "/img/home_milky-way.jpg"}
             alt="commodity traders in chennai"
           />
         </div>
@@ -26,7 +25,7 @@ class LandingPage extends Component {
           <div className="row">
             <div className="col-md-6">
               <img
-                src="/img/time.jpg"
+                src={process.env.PUBLIC_URL + "/img/time.jpg"}
                 class="img-responsive"
                 width="100%"
                 alt="Auto spares"
@@ -123,7 +122,7 @@ class LandingPage extends Component {
             <div className="col-xs-12 col-sm-6 col-md-4">
               <h3>Agro</h3>
               <img
-                src="./img/agro.webp"
+                src={process.env.PUBLIC_URL + "/img/agro.webp"}
                 className="img-responsive"
                 width="100%"
                 alt="haks"
@@ -132,7 +131,7 @@ class LandingPage extends Component {
             <div className="col-xs-12 col-sm-6 col-md-4">
               <h3>Metals</h3>
               <img
-                src="/img/metals.webp"
+                src={process.env.PUBLIC_URL + "/img/metals.webp"}
                 className="img-responsive"
                 width="100%"
                 alt="haks"
@@ -141,7 +140,7 @@ class LandingPage extends Component {
             <div className="col-xs-12 col-sm-6 col-md-4">
               <h3>Fuel</h3>
               <img
-                src="/img/fuel.webp"
+                src={process.env.PUBLIC_URL + "/img/fuel.webp"}
                 className="img-responsive"
                 width="100%"
                 alt="haks"
@@ -150,7 +149,7 @@ class LandingPage extends Component {
             <div className="col-xs-12 col-sm-6 col-md-4">
               <h3>Digital Marketing IT</h3>
               <img
-                src="/img/digi.webp"
+                src={process.env.PUBLIC_URL + "/img/digi.webp"}
                 className="img-responsive"
                 width="100%"
                 alt="haks"
@@ -159,7 +158,7 @@ class LandingPage extends Component {
             <div className="col-xs-12 col-sm-6 col-md-4">
               <h3>International Trade</h3>
               <img
-                src="/img/trade.webp"
+                src={process.env.PUBLIC_URL + "/img/trade.webp"}
                 className="img-responsive"
                 width="100%"
                 alt="haks"
@@ -168,7 +167,7 @@ class LandingPage extends Component {
             <div className="col-xs-12 col-sm-6 col-md-4">
               <h3>Automotive</h3>
               <img
-                src="/img/automotive.webp"
+                src={process.env.PUBLIC_URL + "/img/automotive.webp"}
                 className="img-responsive"
                 width="100%"
                 alt="haks"

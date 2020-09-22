@@ -4,14 +4,14 @@ let transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   auth: {
     type: "OAuth2",
-    user: "it.haksinterlance@gmail.com",
-    clientId:
-      "334096044223-nb2lk25sbfm27b5phhf3mv89fjmu2lap.apps.googleusercontent.com",
-    clientSecret: "2sABWYCsttvRkwtcI2BMC46G",
-    refreshToken:
-      "1//04NS8_It5VYMhCgYIARAAGAQSNwF-L9IrCuYO1qVWmzLNk0cGafm5ykpazObOmB2GV4Hnyy5MwGfNuZwmMPbLXFCq1tVc3ZsKqZY",
+    user: process.env.EMAIL,
+    clientId: process.env.CLIENT_ID,
+    clientSecret: process.env.CLIENT_SECRET,
+    refreshToken: process.env.REFRESH_TOKEN,
   },
 });
+
+console.log(process.env);
 
 const sendMail = (name, emailid, country, mobileno, company, inquiry, cb) => {
   let mailOptions = {
@@ -19,15 +19,15 @@ const sendMail = (name, emailid, country, mobileno, company, inquiry, cb) => {
     to: "haksinterlance@gmail.com",
     subject: name,
     text:
-      "Country = \n" +
+      "\n Country = " +
       country +
-      "Mobileno= \n" +
+      "\n Mobileno= " +
       mobileno +
-      "Company= \n" +
+      "\n Company= " +
       company +
-      "Email= \n" +
+      "\n Email= " +
       emailid +
-      "&Inquiry= \n" +
+      "\n Inquiry= " +
       inquiry,
   };
 

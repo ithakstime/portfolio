@@ -82,11 +82,11 @@ class Contact extends Component {
 
     axios
       .post("/hakstime", formData)
-      .then(function () {
+      .then(function() {
         Swal.fire("Inquiry sent successfully!");
         window.location.reload();
       })
-      .catch(function (error) {
+      .catch(function(error) {
         Swal.fire("Invalid form! Check your form");
         this.submituserInquiryForm();
       });
@@ -174,7 +174,7 @@ class Contact extends Component {
         <div class="container-fluid px-0">
           <img
             className="header-img img-fluid"
-            src="/img/phone.jpg"
+            src={process.env.PUBLIC_URL + "/img/phone.jpg"}
             alt="commodity traders in chennai"
           />
         </div>

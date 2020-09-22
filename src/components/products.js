@@ -7,7 +7,7 @@ class Product extends Component {
         <div class="container-fluid px-0">
           <img
             className="header-img img-responsive img-fluid"
-            src="/img/moto.jpg"
+            src={process.env.PUBLIC_URL + "/img/moto.jpg"}
             alt="products of haksinternationallancing"
           />
         </div>
@@ -32,7 +32,7 @@ class Product extends Component {
               <div className="card shadow-lg">
                 <img
                   className="card-img-top img-responsive"
-                  src="/img/rice.jpg"
+                  src={process.env.PUBLIC_URL + "/img/rice.jpg"}
                   height="175vh"
                   alt="products of haksinternationallancing"
                 />
@@ -46,7 +46,7 @@ class Product extends Component {
               <div className="card">
                 <img
                   className="card-img-top img-responsive"
-                  src="/img/grains.jpg"
+                  src={process.env.PUBLIC_URL + "/img/grains.jpg"}
                   height="175vh"
                   alt="products of haksinternationallancing"
                 />
@@ -60,7 +60,7 @@ class Product extends Component {
               <div className="card">
                 <img
                   className="card-img-top img-responsive"
-                  src="/img/sugar.jpg"
+                  src={process.env.PUBLIC_URL + "/img/sugar.jpg"}
                   height="175vh"
                   alt="products of haksinternationallancing"
                 />
@@ -85,7 +85,7 @@ class Product extends Component {
               <div className="card shadow-lg">
                 <img
                   className="card-img-top img-responsive"
-                  src="/img/aluminium.jpg"
+                  src={process.env.PUBLIC_URL + "/img/aluminium.jpg"}
                   height="175vh"
                   alt="products of haksinternationallancing"
                 />
@@ -99,7 +99,7 @@ class Product extends Component {
               <div className="card">
                 <img
                   className="card-img-top img-responsive"
-                  src="/img/constructionsteel.jpg"
+                  src={process.env.PUBLIC_URL + "/img/constructionsteel.jpg"}
                   height="175vh"
                   alt="products of haksinternationallancing"
                 />
@@ -113,7 +113,7 @@ class Product extends Component {
               <div className="card">
                 <img
                   className="card-img-top img-responsive"
-                  src="/img/gold.jpg"
+                  src={process.env.PUBLIC_URL + "/img/gold.jpg"}
                   height="175vh"
                   alt="products of haksinternationallancing"
                 />
@@ -138,7 +138,7 @@ class Product extends Component {
               <div className="card shadow-lg">
                 <img
                   className="card-img-top img-responsive"
-                  src="/img/kiamotor.png"
+                  src={process.env.PUBLIC_URL + "/img/kiamotor.png"}
                   height="175vh"
                   alt="products of haksinternationallancing"
                 />
@@ -152,7 +152,7 @@ class Product extends Component {
               <div className="card">
                 <img
                   className="card-img-top img-responsive"
-                  src="/img/ford.png"
+                  src={process.env.PUBLIC_URL + "/img/ford.png"}
                   height="175vh"
                   alt="products of haksinternationallancing"
                 />
@@ -166,7 +166,7 @@ class Product extends Component {
               <div className="card">
                 <img
                   className="card-img-top img-responsive"
-                  src="/img/hyundai.png"
+                  src={process.env.PUBLIC_URL + "/img/hyundai.png"}
                   height="175vh"
                   alt="products of haksinternationallancing"
                 />
@@ -182,7 +182,7 @@ class Product extends Component {
                   <div className="card">
                     <img
                       className="card-img-top"
-                      src="/img/honda.png"
+                      src={process.env.PUBLIC_URL + "/img/honda.png"}
                       height="175vh"
                       alt="honda"
                     />
