@@ -325,7 +325,7 @@ class Contact extends Component {
             <div className="col-md-6 text-center">
               <h4>HAKS INTERNATIONAL LANCING</h4>
               <img
-                src="img/haks.jpg"
+                src={process.env.PUBLIC_URL + "/img/haks.jpg"}
                 class="img-fluid"
                 alt="Haks international lancing"
               />
