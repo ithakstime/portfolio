@@ -9,11 +9,27 @@ import Post from "./post";
 
 const Main = () => (
   <Switch>
-    <Route exact path="/portfolio" component={Home} />
-    <Route path="/portfolio/products" component={Product} />
-    <Route path="/portfolio/gallery" component={Gallery} />
-    <Route path="/portfolio/contact" component={Contact} />
-    <Route path="/portfolio/post" component={Post} />
+    <Route
+      exact
+      path="/ithakstime/portfolio/tree/01-setup/public"
+      component={Home}
+    />
+    <Route
+      path="/ithakstime/portfolio/tree/01-setup/public/products"
+      component={Product}
+    />
+    <Route
+      path="/ithakstime/portfolio/tree/01-setup/public/gallery"
+      component={Gallery}
+    />
+    <Route
+      path="/ithakstime/portfolio/tree/01-setup/public/contact"
+      component={Contact}
+    />
+    <Route
+      path="/ithakstime/portfolio/tree/01-setup/public/post"
+      component={Post}
+    />
   </Switch>
 );
 

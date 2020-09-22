@@ -11,10 +11,16 @@ class App extends Component {
         <Layout>
           <Header className="color" title="HAKStime" scroll>
             <Navigation>
-              <Link to="/">Home</Link>
-              <Link to="/products">Products</Link>
-              <Link to="/contact">Contact</Link>
-              <Link to="/post">Posts</Link>
+              <Link to="/ithakstime/portfolio/tree/01-setup/public">Home</Link>
+              <Link to="/ithakstime/portfolio/tree/01-setup/public/products">
+                Products
+              </Link>
+              <Link to="/ithakstime/portfolio/tree/01-setup/public/contact">
+                Contact
+              </Link>
+              <Link to="/ithakstime/portfolio/tree/01-setup/public/post">
+                Posts
+              </Link>
             </Navigation>
           </Header>
           <Drawer title="HAKStime">
