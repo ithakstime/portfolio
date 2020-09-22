@@ -9,11 +9,11 @@ import Post from "./post";
 
 const Main = () => (
   <Switch>
-    <Route exact path="/public/" component={Home} />
-    <Route path="/public/products" component={Product} />
-    <Route path="/public/gallery" component={Gallery} />
-    <Route path="/public/contact" component={Contact} />
-    <Route path="/public/post" component={Post} />
+    <Route exact path="/portfolio/" component={Home} />
+    <Route path="/portfolio/products" component={Product} />
+    <Route path="/portfolio/gallery" component={Gallery} />
+    <Route path="/portfolio/contact" component={Contact} />
+    <Route path="/portfolio/post" component={Post} />
   </Switch>
 );
 

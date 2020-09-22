@@ -11,18 +11,18 @@ class App extends Component {
         <Layout>
           <Header className="color" title="HAKStime" scroll>
             <Navigation>
-              <Link to="/public/">Home</Link>
-              <Link to="/public/products">Products</Link>
-              <Link to="/public/contact">Contact</Link>
-              <Link to="/public/post">Posts</Link>
+              <Link to="/portfolio/">Home</Link>
+              <Link to="/portfolio/products">Products</Link>
+              <Link to="/portfolio/contact">Contact</Link>
+              <Link to="/portfolio/post">Posts</Link>
             </Navigation>
           </Header>
           <Drawer title="HAKStime">
             <Navigation>
-              <Link to="/public/">Home</Link>
-              <Link to="/public/products">Products</Link>
-              <Link to="/public/contact">Contact</Link>
-              <Link to="/public/post">Posts</Link>
+              <Link to="/portfolio/">Home</Link>
+              <Link to="/portfolio/products">Products</Link>
+              <Link to="/portfolio/contact">Contact</Link>
+              <Link to="/portfolio/post">Posts</Link>
             </Navigation>
           </Drawer>
           <Content>
